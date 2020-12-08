@@ -23,17 +23,7 @@ Bankrekening& Bankrekening::operator=(const Bankrekening& other)
 	return *this;
 }
 
-Bankrekening& operator+(Bankrekening& lhs, const Transactie& rhs)
-{
-	lhs.verwerkTransactie(rhs, true);
-	return lhs;
-}
 
-//Bankrekening& operator-(Bankrekening& lhs, const Transactie& rhs)
-//{
-//	lhs.verwerkTransactie(rhs, false);
-//	return lhs;
-//}
 
 Bankrekening& Bankrekening::operator+=(const Transactie& other)
 {

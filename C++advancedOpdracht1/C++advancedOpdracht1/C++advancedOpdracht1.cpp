@@ -2,6 +2,10 @@
 #include "Transactie.h"
 #include "Bankrekening.h"
 #include <iostream>
+#include "windows.h"
+#include "time.h"
+#include <stdio.h>
+#include <conio.h>
 float x;
 int main()
 {
@@ -10,8 +14,9 @@ int main()
 	std::cin >> x;
 	Bankrekening* rekening = new Bankrekening();
 	Transactie* prijs = new Transactie(x);
-	*rekening + *prijs;
+	*rekening += *prijs;
 	std::cout << "saldo : " << rekening->getSaldo() << "euro" <<  std::endl;
-	system("pause");
-
+	return 0;
 }
+
+  

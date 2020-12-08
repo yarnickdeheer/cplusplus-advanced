@@ -11,8 +11,6 @@ public:
 	~Bankrekening();
 	Bankrekening(const Bankrekening& other);
 	Bankrekening& operator=(const Bankrekening& other);
-	friend Bankrekening& operator+(Bankrekening& lhs, const Transactie& rhs);
-	//friend Bankrekening& operator-(Bankrekening& lhs, const Transactie& rhs);
 	Bankrekening& operator+=(const Transactie& other);
 	Bankrekening& operator-=(const Transactie& other);
 	std::ostream& operator<<(const Bankrekening& other);
